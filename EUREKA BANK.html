@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="eureka.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Diplomata&family=Zen+Dots&display=swap" rel="stylesheet">
+ <!--FONTS-Diplomata-Ranchers-Zen Dots-arimo-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eureka Bank Ltd</title>
+  <style>
+    body {
+    background-color: #030303; 
+    padding-bottom: 600px;
+    color: aliceblue;
+
+    }
+    nav {
+      display: block;
+    }
+    .container-0 {
+      margin-top: 250px;
+      width: 90vw;
+      height: 400px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border: 5px groove rgb(0, 7, 61);
+      border-radius: 10px;
+      column-gap: 5px;
+      background-color: rgb(14, 14, 14);
+
+    }
+    .container-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      background-color: rgb(9, 9, 9);
+      cursor: pointer;
+      transition: border 100ms,box-shadow 500ms;
+      height: 80%;
+      width: 90%;
+      margin-top: 10px;
+      margin-left: 10px;
+      border-radius: 10px;
+      opacity: 100%;
+     /* position: relative;
+      z-index: 2;
+      border: 5px solid rgb(129, 63, 63);*/
+    }/*
+   .container-1::before {
+      content: '';
+      background:linear-gradient(rgb(0, 238, 255),rgb(98, 249, 4));
+      height: 105%;
+      width: 105%;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      z-index: -10;
+    }*/
+    .container-1:hover {
+      border: 2px dotted dodgerblue;
+      box-shadow: 3px 3px 50px rgba(2, 75, 148, 0.528);  
+    }
+    .container-1:hover span {
+      font-size: 1.1em;
+    }
+    .container-1:hover .eyecon {
+      background:conic-gradient(rgb(65, 245, 0),yellow,rgb(106, 255, 0));
+    }
+    .container-1 span {
+      color: aquamarine;
+      background-color: black;
+      padding: 10px 10px;
+      user-select: none;
+      margin-top: 40px;
+      border-radius: 5px;
+    }
+    .service-icon {
+      user-select: none;
+      height: 50px;
+      margin-top: 10px;
+    }
+    .eyecon{
+      background-color: rgb(3, 245, 245);
+      border-radius: 25px;
+      object-fit: contain;
+    }
+  .container-2 {
+    font-family: "Arima";
+    color: white;
+    background-color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    z-index: 2;
+    position: relative;
+  }
+  .mainDisplay2 {
+    background-color: rgb(0, 0, 0);
+    border: 2px groove rgba(197, 54, 14, 0.804);
+    border-radius: 3px;
+    padding-top: 15px;
+    padding-left: 6px;
+    width: 270px;
+    height: 35px;
+    position: absolute;
+    left: 90px;
+    top: -65px;
+    letter-spacing: 2px;
+  }
+  a:visited{
+    color: rgb(18, 18, 18);
+  }
+  </style>
+  <script src="livescript/eureka.js">
+ 
+  </script>
+</head>
+<body>
+  <header><span class="Bank-name">EUREKA BANK</span>
+  <!--nav bar *Loans*resorces*Services-->
+  <nav>
+<span class="navList"></span>
+<span class="navList"></span>
+<span class="navList"></span>
+<span class="navList"></span>
+<span class="navList"></span>
+  </nav>
+  </header>
+<!--Container 2 holds the display line-->
+  <span class="container-2"><span class="mainDisplay mainDisplay2"></span></span>
+  <div class="container-0">
+<!-- Containr-0 9x9 grid contains all service boxes-->
+<!--Container 1 is the gradient background-->
+<a href="ebPage2.html"><div class="container-1"> <img class="service-icon"  src="images/S-card.png"><span>Send Money</span></div></a>
+<a onclick="viewBal()"><div class="container-1"> <img class="service-icon eyecon" src="images/EYECONtransperncy.png"><span>View Balance</span></div></a>
+<a href="ebPage3.html"><div class="container-1"> <img class="service-icon" src="images/S-loan.png"><span>Apply Loan</span></div></a>
+<a><div class="container-1"> <img class="service-icon" src="images/S-wallet.png"><span>Wallet</span></div></a>
+<a><div class="container-1"> <img class="service-icon" src="images/S-statements.png"><span>Statements</span></div></a>
+<a><div class="container-1"> <img class="service-icon" src="images/S-statements.png"><span>Help BOT</span></div></a>
+ </div>
+</body>
+</html>

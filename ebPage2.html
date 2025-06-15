@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="eureka.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      padding-bottom: 800px;
+      position: relative;
+      z-index: 1;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    input[type="text"] {
+      height: 3em;
+      caret-color: crimson;
+      border-radius: 6px;
+      border: 3px solid rgb(219, 37, 37);
+      background-color: black;
+      color: aliceblue;
+      padding-left: 6px;
+      margin-right: 10px;
+      transition: box-shadow 0.4s;
+
+    }
+        input[type="text"]:hover {
+                box-shadow: 3px 3px 15px rgba(0, 118, 221, 0.441);
+        }
+    input[type="number"] {
+      height: 3em;
+      caret-color: dodgerblue;
+      border-radius: 9px;
+      border: 3px solid rgb(0, 136, 255);
+      background-color: black;
+      color: aliceblue;
+      padding-left: 6px;
+    }
+        input[type="number"]:hover { 
+        box-shadow: 3px 3px 20px rgba(233, 0, 0, 0.526);
+    }
+      .plus {
+      border: 2px solid white;
+      color: white;
+      background-color: black;
+      font-weight: 600;
+      font-size: 1em;
+      transition: background-color 0.2s,color 1s;
+    }
+    .plus:hover {
+      color: black;
+      background-color: orange;
+      border: none;
+      font-size: 1.2em;
+    }
+  #PopDisplayPAGE2 {
+    display: none;
+    border:3px solid rgb(0, 128, 201);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    width: 90vw;
+    height: 300px;
+    margin-top: 50px;
+    position: absolute;
+    top: 8px;
+    z-index: 2;
+  }
+  .bene-display {
+    display: block;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style:solid;
+    border-color:rgb(0, 147, 232);
+    border-top: none;
+    border-left: none;
+    font-size: 1.2em;
+    height: 40px;
+    width: 80%;
+    height: 20%;
+    margin-left: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(43, 171, 226);
+  }
+  #zekeamount {
+    border: 4px solid orangered;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.242);
+    color: black;
+    font-size: 1em;
+    width: 60%;
+    margin-left: 20px;
+  }
+  .arucard {
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+  }
+  .paybtn {
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    background-color: darkblue;
+    width: 100px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: color 0.3s,background-color 0.3s;
+  }
+  .paybtn:hover {
+    color: blue;
+    background-color: antiquewhite;
+  }
+  .paybtn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    right: 100px;
+    bottom: 100px;
+    background-color: blueviolet;
+
+  }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transactions</title>
+    <script src="livescript/eureka.js"></script>
+</head>
+<body>
+   <header><span class="Bank-name">EUREKA &#9824</span><button class="return-btn" onclick="returntohome()" title="GO BACK">&#x23CE</button></header>
+  <h1 style="margin-top: 100px;">Send money</h1>
+<label for="benName">  Add Benifitciary</label> <button onclick="plusbtn()" class="plus">+</button><br><br>
+  <input class="Benificiary-name Benificiary-name-style" type="text" id="benName" placeholder="Enter Name">
+  <input class="Benificiary-ACN" type="number" id="benName" placeholder="Enter Account Number">
+
+<div id="PopDisplayPAGE2">
+  <p class="Benificiary-details bene-display"></p>
+<input class="Amountded" id="zekeamount" type="number" placeholder="₹ Enter Amount"><br>
+<button class="paybtn" onclick="deduction()">Pay</button>
+<img src="images/Arucard2.png" class="arucard"> 
+</div>
+
+
+</body>
+</html>
