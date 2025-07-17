@@ -25,34 +25,34 @@ function viewBal() {
 }
  }
 function addFunds1() {
-  balance+=5000; console.log(balance);
+  balance+=3700000; console.log(balance);
   localStorage.setItem('ACbal',String(balance));
-  alert('₹5,000 has been credited to your account');
+  alert('₹37,00,000 has been credited to your account');
 }
 function addFunds2() {
-  balance+=18000; console.log(balance);
+  balance+=15500005; console.log(balance);
   localStorage.setItem('ACbal',String(balance));
-  alert('₹18,000 has been credited to your account');
+  alert('₹1 crore 55 lakh and change has been credited to your account');
 }
 function addFunds3() {
-  balance+=12000; console.log(balance);
+  balance+=6100000; console.log(balance);
   localStorage.setItem('ACbal',String(balance));
-  alert('₹12,000 has been credited to your account');
+  alert('₹61,00,000 has been credited to your account');
 }
 function addFunds4() {
-  balance+=15000; console.log(balance);
+  balance+=20000; console.log(balance);
   localStorage.setItem('ACbal',String(balance));
-  alert('₹15,000 has been credited to your account');
+  alert('₹19,900 has been credited to your account');
 }
 function addFunds5() {
-  balance+=10000; console.log(balance);
+  balance+=30000; console.log(balance);
   localStorage.setItem('ACbal',String(balance));
-  alert('₹10,000 has been credited to your account');
+  alert('₹30,000 has been credited to your account');
 }
 function addFunds6() {
-  balance+=100000; console.log(balance);
+  balance+=30; console.log(balance);
   localStorage.setItem('ACbal',String(balance));
-  alert('₹1,00,000 has been credited to your account');
+  alert('₹30 has been credited to your account');
 }
 function plusbtn() {
  const Mydiv = document.getElementById('PopDisplayPAGE2');
