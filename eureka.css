@@ -105,10 +105,10 @@
   }
   75% {
   transform: rotate(360deg);
-  opacity: 80%;
+  opacity: 50%;
   }
   100% {
   transform: rotate(450deg);
-  opacity: 40%;
+  opacity: 0;
   } 
   }
