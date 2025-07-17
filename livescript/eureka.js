@@ -71,3 +71,6 @@ function deduction () {
   console.log(`Balance after paying : ${balance}`);
   alert(`Dear Customer,\nAn amount of ₹${amountToSub} has been\n deducted from your account`);
 }
+function unavail() {
+alert('Service unavailable');
+}
