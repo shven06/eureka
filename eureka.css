@@ -88,7 +88,7 @@
   animation-timing-function: linear;
   animation-direction: normal;
   animation-iteration-count: 1;
-  animation-delay: 1s;
+  animation-delay: 300ms;
   animation-fill-mode: forwards;
   }
   @keyframes spin {
