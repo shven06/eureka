@@ -84,7 +84,7 @@
   opacity: 100%;
   user-select: none;
   animation-name: spin;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-timing-function: linear;
   animation-direction: normal;
   animation-iteration-count: 2;
@@ -94,7 +94,7 @@
   @keyframes spin {
   0% {
   transform: rotate(90deg);
-      opacity:20%;
+      opacity:0%;
   }
   25% {
   transform: rotate(180deg);
@@ -110,6 +110,6 @@
   }
   100% {
   transform: rotate(450deg);
-  opacity: 0%;
+  opacity: 70%;
   } 
   }
