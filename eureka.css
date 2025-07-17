@@ -94,6 +94,7 @@
   @keyframes spin {
   0% {
   transform: rotate(90deg);
+      opacity:20%;
   }
   25% {
   transform: rotate(180deg);
@@ -105,10 +106,10 @@
   }
   75% {
   transform: rotate(360deg);
-  opacity: 50%;
+  opacity: 100%;
   }
   100% {
   transform: rotate(450deg);
-  opacity: 0;
+  opacity: 0%;
   } 
   }
