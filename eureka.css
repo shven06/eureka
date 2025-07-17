@@ -1,5 +1,5 @@
     header {
-      height: 60px;
+      height: 65px;
       user-select: none;
       border: none;   /*grove, double, dotted, dashed, solid*/
       margin: 0;
@@ -89,7 +89,7 @@
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-delay: 1s;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
   }
   @keyframes spin {
   0% {
